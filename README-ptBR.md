@@ -1,14 +1,13 @@
 # Clean Go Code
 
-## Preface: Why Write Clean Code?
+[English](README.md) - [Portuguese](README-ptBR.md)
+## Prefácio: Por que escrever código limpo?
 
-This document is a reference for the Go community that aims to help developers write cleaner code. Whether you're working on a personal project or as part of a larger team, writing clean code is an important skill to have. Establishing good paradigms and consistent, accessible standards for writing clean code can help prevent developers from wasting many meaningless hours on trying to understand their own (or others') work.
+Este documento é uma referência para a comunidade de Go que tem como objetivo ajudar os desenvolvedores a escrever códigos cada vez mais limpos. Independentemente de estar trabalhando apenas em projetos pessoais ou em grandes times, escrever código limpo é uma habilidade extremamente importante. Estabelecer bons paradigmas e padrões consistentes podem salvar desenvolvedores de desperdiçar incontáveis horas tentando entender seu próprio (ou de outros) trabalho.
 
-> <em>We don’t read code, we <b>decode</b> it &ndash; Peter Seibel</em>
+> <em>"Nós não lemos código, nós <b>decodificamos</b>" &ndash; Peter Seibel</em>
 
-As developers, we're sometimes tempted to write code in a way that's convenient for the time being without regard for best practices; this makes code reviews and testing more difficult. In a sense, we're <em>encoding</em>&mdash;and, in doing so, making it more difficult for others to decode our work. But we want our code to be usable, readable, and maintainable. And that requires coding the <em>right</em> way, not the easy way.
-
-This document begins with a simple and short introduction to the fundamentals of writing clean code. Later, we'll discuss concrete refactoring examples specific to Go.
+Como desenvolvedores, as vezes caimos na tentação de escrever código de uma forma mais conveniente, sem nos preocuparmos com as melhores práticas; Isso dificulta a revisão e o teste de código. Podemos dizer que estamos <em>"codificando"</em> &mdash; e, fazendo isso, tornando mais difícil para que outras pessoas possam decodificar nosso trabalho. Mas nós queremos que nosso código seja útil, legível e fácil de manter. Isso requer que o código seja escrito da forma <em>certa</em>, e não da forma fácil.
 
 ##### A short word on `gofmt`
 I'd like to take a few sentences to clarify my stance on `gofmt` because there are plenty of things I disagree with when it comes to this tool. I prefer snake case over camel case, and I quite like my constant variables to be uppercase. And, naturally, I also have many opinions on bracket placement. *That being said*, `gofmt` does allow us to have a common standard for writing Go code, and that's a great thing. As a developer myself, I can certainly appreciate that Go programmers may feel somewhat restricted by `gofmt`, especially if they disagree with some of its rules. But in my opinion, homogeneous code is more important than having complete expressive freedom.
