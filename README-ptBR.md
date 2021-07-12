@@ -13,28 +13,28 @@ Como desenvolvedores, as vezes caimos na tentação de escrever código de uma f
 
 Eu gostaria de reservar algumas sentenças para clarear meu posicionamento sobre a ferramenta `gofmt` porque existem diversas coisas com as quais eu discordo. Eu gosto mais de `snake_case` do que `camelCase`, e eu até gosto que minhas constantes sejam em `UPPERCASE`. E, naturalmente, eu também tenho varios opniões em relação ao posicionamento de colchetes. *Dito isso*, `gofmt` nos permite ter um padrão em comum ao escrever código em Go, e isso é ótimo! Como um desenvolvedor, eu certamente aprecio que programadores de Go podem se sentir um pouco restringidos pelo `gofmt`, principalmente se eles discordam de algumas de suas regras. Mas em minha opnião, código homogêneo é muito mais importante que ter uma completa liberdade de expressão.
 
-## Table of Contents
-* [Introduction to Clean Code](#Introduction-to-Clean-Code)
-    * [Test-Driven Development](#Test-Driven-Development)
-    * [Naming Conventions](#Naming-Conventions)
-    * * [Comments](#Comments)
-    	* [Function Naming](#Function-Naming)
-    	* [Variable Naming](#Variable-Naming)
-    * [Cleaning Functions](#Cleaning-Functions)
-      * [Function Length](#Function-Length)
-      * [Function Signatures](#Function-Signatures)
-    * [Variable Scope](#Variable-Scope)
-    * [Variable Declaration](#Variable-Declaration)
+## Tabela de conteúdos
+* [Introdução ao código limpo](#Introduction-to-Clean-Code)
+    * [Desenvolvimento guiado por testes (TDD)](#Test-Driven-Development)
+    * [Convenção de Nomes](#Naming-Conventions)
+    * * [Comentários](#Comments)
+    	* [Nomeando funções](#Function-Naming)
+    	* [Nomeando variáveis](#Variable-Naming)
+    * [Limpando funções](#Cleaning-Functions)
+      * [Tamanho das funções](#Function-Length)
+      * [Assinatura das funções](#Function-Signatures)
+    * [Escopo das variáveis](#Variable-Scope)
+    * [Declaracão de variáveis](#Variable-Declaration)
     
-* [Clean Go](#Clean-Go)
-    * [Return Values](#Return-Values) 
-      * [Returning Defined Errors](#Returning-Defined-Errors)
-      * [Returning Dynamic Errors](#Returning-Dynamic-Errors)
-    * [Pointers in Go](#Pointers-in-Go)
-    * [Closures Are Function Pointers](#Closures-are-Function-Pointers)
-    * [Interfaces in Go](#Interfaces-in-Go)
-    * [The Empty `interface{}`](#The-Empty-Interface)
-* [Summary](#Summary)
+* [Go Limpo](#Clean-Go)
+    * [Retornando valores](#Return-Values) 
+      * [Retornando erros definidos](#Returning-Defined-Errors)
+      * [Retornando erros dinâmicos](#Returning-Dynamic-Errors)
+    * [Ponteiros em Go](#Pointers-in-Go)
+    * [Clojures são ponteiros de funções](#Closures-are-Function-Pointers)
+    * [Interfaces no Go](#Interfaces-in-Go)
+    * [A `interface{}` vazia](#The-Empty-Interface)
+* [Sumário](#Summary)
 
 ## Introduction to Clean Code
 
