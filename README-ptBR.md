@@ -9,8 +9,9 @@ Este documento é uma referência para a comunidade de Go que tem como objetivo 
 
 Como desenvolvedores, as vezes caimos na tentação de escrever código de uma forma mais conveniente, sem nos preocuparmos com as melhores práticas; Isso dificulta a revisão e o teste de código. Podemos dizer que estamos <em>"codificando"</em> &mdash; e, fazendo isso, tornando mais difícil para que outras pessoas possam decodificar nosso trabalho. Mas nós queremos que nosso código seja útil, legível e fácil de manter. Isso requer que o código seja escrito da forma <em>certa</em>, e não da forma fácil.
 
-##### A short word on `gofmt`
-I'd like to take a few sentences to clarify my stance on `gofmt` because there are plenty of things I disagree with when it comes to this tool. I prefer snake case over camel case, and I quite like my constant variables to be uppercase. And, naturally, I also have many opinions on bracket placement. *That being said*, `gofmt` does allow us to have a common standard for writing Go code, and that's a great thing. As a developer myself, I can certainly appreciate that Go programmers may feel somewhat restricted by `gofmt`, especially if they disagree with some of its rules. But in my opinion, homogeneous code is more important than having complete expressive freedom.
+##### Uma palavinha sóbre: `gofmt`
+
+Eu gostaria de reservar algumas sentenças para clarear meu posicionamento sobre a ferramenta `gofmt` porque existem diversas coisas com as quais eu discordo. Eu gosto mais de `snake_case` do que `camelCase`, e eu até gosto que minhas constantes sejam em `UPPERCASE`. E, naturalmente, eu também tenho varios opniões em relação ao posicionamento de colchetes. *Dito isso*, `gofmt` nos permite ter um padrão em comum ao escrever código em Go, e isso é ótimo! Como um desenvolvedor, eu certamente aprecio que programadores de Go podem se sentir um pouco restringidos pelo `gofmt`, principalmente se eles discordam de algumas de suas regras. Mas em minha opnião, código homogêneo é muito mais importante que ter uma completa liberdade de expressão.
 
 ## Table of Contents
 * [Introduction to Clean Code](#Introduction-to-Clean-Code)
@@ -1415,3 +1416,6 @@ As a final note, it's worth mentioning that the notion of clean code is particul
 It's also important to understand that fanaticism is never the goal with clean code. A codebase will most likely never be fully 'clean,' in the same way that your office desk probably isn't either. There's certainly room for you to step outside the rules and boundaries covered in this article. However, remember that the most important reason for writing clean code is to help yourself and other developers. We support engineers by ensuring stability in the software we produce and by making it easier to debug faulty code. We help our fellow developers by ensuring that our code is readable and easily digestible. We help <em>everyone</em> involved in the project by establishing a flexible codebase that allows us to quickly introduce new features without breaking our current platform. We move quickly by going slowly, and everyone is satisfied.
 
 I hope you will join this discussion to help the Go community define (and refine) the concept of clean code. Let's establish a common ground so that we can improve software&mdash;not only for ourselves but for the sake of everyone.
+
+---
+Tradução livre por: [Francisco Cidade (@fcidade)](https://github.com/fcidade)
